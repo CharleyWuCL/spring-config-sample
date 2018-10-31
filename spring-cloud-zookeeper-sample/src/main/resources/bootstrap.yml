@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zookeeper-config-client
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      max-retries: 3
+      config:
+        enabled: true
+        root: config

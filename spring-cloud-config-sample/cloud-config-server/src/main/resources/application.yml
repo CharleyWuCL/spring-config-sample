@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xxx/spring-config-repository.git
+          search-paths: config/
+          username: xxx
+          password: xxx
+    stream:
+      kafka:
+        binder:
+          zk-nodes: localhost:2181
+          brokers: localhost:9092
+
+#SpringBoot 2.0 需要开启端点才能使用 POST http://localhost:8888/actuator/bus-refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

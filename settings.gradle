@@ -1,0 +1,10 @@
+rootProject.name = 'spring-config-sample'
+
+include 'spring-cloud-zookeeper-sample'
+include 'spring-cloud-config-sample'
+include 'spring-cloud-config-sample:cloud-config-server'
+include 'spring-cloud-config-sample:cloud-config-client'
+
+//findProject(':spring-cloud-config-sample:cloud-config-server')?.name = 'cloud-config-server'
+//findProject(':spring-cloud-config-sample:cloud-config-client')?.name = 'cloud-config-client'
+
