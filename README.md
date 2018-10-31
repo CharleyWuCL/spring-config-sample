@@ -24,7 +24,7 @@ Spring Cloud下配置中心有两种实现方式，一种是`Spring-cloud-config
 
 #### 系统架构
 
-![SpringCloudConfig](image/SpringCloudConfig.png)
+![SpringCloudConfig](https://raw.githubusercontent.com/CharleyWuCL/charleywucl.github.io/master/images/blog/config/SpringCloudConfig.png)
 
 #### 配置拉取
 
